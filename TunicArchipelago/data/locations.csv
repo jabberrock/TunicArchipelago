@@ -1,0 +1,338 @@
+Scene,GameObject Name,Position,Is Valid Check,Unique Name
+Sword Cave,Chest: Stick x 1,"(8.8, 0.0, 9.9)",1,Stick House - Chest
+Ruined Shop,Treasure Chest (8),"(22.4, 8.0, -24.7)",1,Abandoned Merchant - Chest #1
+Ruined Shop,Chest: (empty),"(27.7, 8.0, -25.2)",0,
+Ruined Shop,Chest: (empty),"(28.0, 8.0, -29.0)",0,
+Ruined Shop,Treasure Chest (10),"(27.9, 8.0, -32.0)",0,
+Ruined Shop,Chest: $40,"(25.1, 8.0, -25.3)",1,Abandoned Merchant - Chest #5
+Ruined Shop,Treasure Chest (6),"(27.9, 8.0, -34.7)",1,Abandoned Merchant - Chest #6
+Town Basement,Chest: SlowmoItem x 1,"(-202.0, 3.0, 74.5)",1,Magic Hourglass Cave - Chest in first room
+Town Basement,Chest: Fairy,"(-202.0, 28.1, 150.0)",1,Magic Hourglass Cave - Fairy at top of pillar
+Ruins Passage,Chest: GoldenTrophy_1 x 1,"(176.0, 16.0, 113.5)",1,First Locked Door - Golden Trophy
+Ruins Passage,Page Pickup (5),"(176.0, 16.0, 39.0)",1,First Locked Door - Page
+Mountain,Page Pickup,"(49.0, 41.2, 3.7)",1,Behind the Mountain Door - In Front of Door - Page
+Mountaintop,Page Pickup_special for final page (not used),"(-11.0, 42.0, 15.0)",0,
+Mountaintop,Page Pickup,"(-11.0, 42.0, 15.0)",1,Behind the Mountain Door - Top of Mountain - Page
+Sword Access,Treasure Chest (1),"(-51.0, 4.0, -48.0)",0,
+Sword Access,Treasure Chest (bush reward),"(-25.0, 8.0, -172.0)",1,East Forest - Hero's Grave - Upper Path - Chest
+Sword Access,Chest: Firebomb x 2,"(-46.0, 8.0, -171.0)",1,East Forest - Hero's Grave - Across the Bridges - Chest
+Sword Access,Treasure Chest (garden path),"(-48.0, 0.0, -172.5)",1,East Forest - Hero's Grave - Lower Path - Chest
+Sword Access,Treasure Chest,"(-42.0, -4.0, -68.0)",0,
+Sword Access,Chest: GoldenTrophy_9 x 1,"(19.0, 4.1, -186.0)",1,East Forest - Hero's Grave - Grave Secret - Chest
+Sword Access,_Sword Pickup,"(45.1, 8.9, -55.6)",0,
+Sword Access,_Sword Pickup,"(87.0, 14.2, 101.9)",0,
+Sword Access,_Sword Pickup (1),"(28.2, 6.1, -190.0)",1,East Forest - Hero's Grave - The Hero's Sword
+Fortress Main,Chest: Firecracker x 5,"(-89.0, 7.0, 56.3)",1,Eastern Vault - Westmost Upper Room - Chest #1
+Fortress Main,Chest: Upgrade Offering - Stamina SP - Feather x 1,"(-82.6, 7.0, 48.6)",1,Eastern Vault - Westmost Upper Room - Chest #2
+Fortress Main,Chest: Flask Shard x 1,"(31.0, 11.0, 50.7)",1,Eastern Vault - Secret Door - Chest
+Fortress Main,Chest: Fairy,"(-75.0, -0.9, 17.0)",1,Eastern Vault - Obelisk Candles Secret - Fairy
+Fortress Main,Page Pickup,"(-88.7, 7.6, 25.8)",1,Eastern Vault - Westmost Balcony - Page
+Fortress Basement,Chest: Berry_HP x 3,"(7.8, 0.0, -6.9)",1,Beneath the Earth - First Cell - Chest
+Fortress Basement,Chest: Upgrade Offering - Magic MP - Mushroom x 1,"(-101.0, 5.0, 27.0)",1,Beneath the Earth - Hit the Switch - Chest
+Fortress Basement,Chest: Trinket - Sneaky x 1,"(-91.3, -4.0, 16.2)",1,Beneath the Earth - Behind the Waterfall - Chest
+Fortress Basement,Treasure Chest in cell,"(26.3, 0.0, 5.1)",1,Beneath the Earth - Last Cell - Chest
+Fortress Basement,Chest: Berry_HP x 3,"(17.2, 0.0, 72.5)",1,Beneath the Earth - Surrounded by Barrels - Chest
+Fortress Courtyard,Chest: Bait x 1,"(-18.0, -4.5, -130.0)",1,Eastern Vault Courtyard - Path to Vault Entrance - Chest
+Fortress Courtyard,Chest: $25,"(-53.7, 0.0, -49.0)",1,Eastern Vault Courtyard - Before You Go Down - Chest
+Fortress Courtyard,Chest: $25,"(6.4, 0.3, -123.8)",1,Eastern Vault Courtyard - Behind the Obelisk - Chest
+Fortress Courtyard,Chest: Upgrade Offering - PotionEfficiency Swig - Ash x 1,"(-13.0, -4.0, -143.5)",1,Eastern Vault Courtyard - From the Belltower - Chest
+Fortress Courtyard,Page Pickup,"(-43.1, 0.0, -44.6)",1,Eastern Vault Courtyard - Page
+Fortress Arena,Vault Key Pickup,"(-0.6, 36.3, 181.2)",1,Interior of the Eastern Vault - Vault Key
+Fortress Arena,Take Questagon Interaction,"(0.0, 1.0, 117.0)",1,Interior of the Eastern Vault - Red Hexagon
+Library Lab,Chest: $128,"(153.8, 95.0, -29.3)",1,The Grand Library - Next to the Shrine - Chest #1
+Library Lab,Chest: $64,"(163.9, 95.0, -41.8)",1,The Grand Library - Next to the Shrine - Chest #3
+Library Lab,Chest: $32,"(155.3, 95.0, -31.3)",1,The Grand Library - Next to the Shrine - Chest #2
+Library Lab,Chest: Piggybank L1 x 1,"(114.5, 95.0, -36.0)",1,The Grand Library - Behind the Chalkboard - Chest
+Library Lab,Page Pickup (2),"(129.1, 92.8, -68.7)",1,The Grand Library - Next to Stairs - Page #1
+Library Lab,Page Pickup (1),"(119.7, 92.8, -84.0)",1,The Grand Library - Next to Chalkboard - Page #2
+Library Lab,Page Pickup,"(160.1, 92.8, -74.9)",1,The Grand Library - Next to Window - Page #3
+Library Hall,Chest: Fairy,"(133.3, 10.1, -43.2)",1,The Grand Library - Library Rug Secret - Fairy
+Quarry,Treasure Chest,"(-82.7, 252.0, 218.0)",0,
+Quarry,Treasure Chest,"(-50.0, 162.0, 34.0)",0,
+Quarry,Treasure Chest,"(-19.5, 170.0, 129.0)",0,
+Quarry,questagon,"(-239.0, 185.0, 47.0)",0,
+Monastery,Chest: Flask Container x 1,"(8.4, 25.0, 170.4)",0,
+Monastery,Chest: Flask Container x 1,"(0.2, 25.0, 175.4)",1,The Quarry - Inside the Monastery - Next to the Hero's Grave - Chest
+Monastery,Chest: (empty),"(3.4, 25.0, 170.1)",0,
+Monastery,Chest: (empty),"(-11.0, 25.0, 170.1)",0,
+Temple,Chest: Fairy,"(14.0, 0.2, 42.4)",1,Inside the Sealed Temple - Fairy
+Temple,Page Pickup,"(27.5, 16.0, 60.0)",1,Inside the Sealed Temple - Upper Level - Page
+Overworld Redux,Chest: Piggybank L1 x 1,"(-83.0, 12.0, -174.0)",1,Overworld - Western Bridge - Chest
+Overworld Redux,Chest: Firebomb x 2,"(-56.0, 24.0, -95.2)",1,Overworld - Bomb Below the Gate - Chest
+Overworld Redux,Chest: $48,"(79.3, 2.5, -173.0)",1,Overworld - Sitting on the East Beach - Chest
+Overworld Redux,Treasure Chest (DEMO FLASK in TOWN),"(-102.5, 28.0, -89.5)",0,
+Overworld Redux,Chest: Flask Shard x 1,"(48.0, 54.1, -12.0)",1,Overworld - East Grapple - Golden Trophy
+Overworld Redux,Chest: $16,"(-33.3, 0.3, -169.8)",1,Overworld - Sand Hook - Chest
+Overworld Redux,Chest: $20,"(-73.0, 40.0, -4.0)",1,Overworld - Behind Windmill - Chest
+Overworld Redux,Chest: Ivy x 3,"(-60.0, 9.0, -119.0)",1,Overworld - West Beach Passage - Chest
+Overworld Redux,Chest: $25,"(96.5, 28.0, -137.0)",1,Overworld - Below the Vane - Chest
+Overworld Redux,Chest: $20,"(-129.0, 20.0, -111.5)",1,Overworld - South of the West Bell - Chest
+Overworld Redux,Chest: $32,"(-159.0, 3.0, -113.5)",1,Overworld - West Beach Bridge - Chest
+Overworld Redux,Chest: $15,"(-68.0, 40.0, -29.5)",1,Overworld - Next to the Windmill - Chest
+Overworld Redux,Treasure Chest (DEMO Secret next to temple),"(-20.0, 43.0, 21.5)",0,
+Overworld Redux,Chest: Piggybank L1 x 1,"(26.0, 28.0, -116.0)",1,Overworld - Above the First Locked Door - Chest
+Overworld Redux,Chest: Firecracker x 2,"(-51.0, 28.0, -87.5)",1,Overworld - West of Well - Chest
+Overworld Redux,_demo Treasure Chest (where telescope is normally),"(-81.0, 40.0, -40.0)",0,
+Overworld Redux,Chest: Trinket - Heartdrops x 1,"(-119.5, 16.0, -111.0)",1,Overworld - West of Fountain - Chest
+Overworld Redux,Chest: Upgrade Offering - PotionEfficiency Swig - Ash x 1,"(-83.2, 4.0, -177.1)",1,Overworld - Below the Western Bridge - Chest
+Overworld Redux,Chest: $30,"(67.0, 66.0, 22.0)",1,Overworld - Top of the Waterfall - Chest
+Overworld Redux,Chest: Upgrade Offering - Health HP - Flower x 1,"(-111.7, 66.0, 38.2)",1,Overworld - Underneath the Staff - Chest
+Overworld Redux,Chest: $25,"(-118.0, 28.0, -46.5)",1,Overworld - Behind the Moss - Chest
+Overworld Redux,Chest: Trinket Coin x 1,"(-83.0, 21.0, -107.0)",0,
+Overworld Redux,Treasure Chest (DEMO_big skeleton prize),"(113.3, 12.0, -152.5)",0,
+Overworld Redux,Chest: Upgrade Offering - Attack - Tooth x 1,"(-19.3, 43.0, 21.7)",1,Overworld - Dark Ramps - Chest
+Overworld Redux,Chest: $25,"(-130.0, 12.0, -119.0)",1,Overworld - Behind the Conduit Autobolt - Chest
+Overworld Redux,Chest: Berry_MP x 1,"(-102.0, 40.0, -40.0)",1,Overworld - After West Bell Tower - Chest
+Overworld Redux,Chest: Trinket - MP Flasks x 1,"(-138.2, 28.0, 10.0)",1,Overworld - Bridge Envoy - Chest
+Overworld Redux,Chest: Flask Shard x 1,"(-19.0, 28.0, -89.0)",1,Overworld - East of the Well - Chest
+Overworld Redux,Chest: Pepper x 2,"(-142.0, 40.0, 29.0)",1,Overworld - Rudeling Camp - Chest
+Overworld Redux,Chest: Pepper x 2,"(25.0, 36.0, -110.0)",1,Overworld - Behind the Breakable Wall - Chest
+Overworld Redux,Chest: Fairy,"(-132.0, 28.1, -55.5)",1,Overworld - Secret of the Moss - Fairy
+Overworld Redux,Chest: $15,"(-138.0, 12.0, -64.0)",1,Overworld - Outside West Furnace - Chest
+Overworld Redux,Chest: Trinket Coin x 1,"(-178.5, 1.0, -78.5)",1,Overworld - Autobolt Island - Chest
+Overworld Redux,Chest: Bait x 1,"(-161.0, 1.0, -72.0)",1,Overworld - Behind the Pier Autobolt - Chest
+Overworld Redux,Chest: Trinket Coin x 1,"(15.5, 1.0, -147.5)",1,Overworld - Central Bridge - Chest
+Overworld Redux,Chest: (empty),"(65.0, 22.0, -138.0)",0,
+Overworld Redux,Chest: Fairy,"(64.5, 44.1, -40.0)",1,Overworld - NE Flowers Secret - Fairy
+Overworld Redux,Chest: Fairy,"(90.4, 36.1, -122.1)",1,Overworld - Weather Vane - Fairy
+Overworld Redux,Chest: GoldenTrophy_9 x 1,"(-4.3, 12.0, -206.4)",1,Overworld - Teleporter Secret - Golden Trophy
+Overworld Redux,Chest: GoldenTrophy_8 x 1,"(-37.2, 28.1, -63.6)",1,Overworld - Wind Chimes - Golden Trophy
+Overworld Redux,Chest: GoldenTrophy_4 x 1,"(-34.0, -0.4, -178.5)",1,Overworld - Sand Hook - Golden Trophy
+Overworld Redux,Chest: Fairy,"(-52.0, 2.1, -174.8)",1,Overworld - SW Flowers Secret - Fairy
+Overworld Redux,Chest: Fairy,"(-83.0, 20.1, -117.5)",1,Overworld - Fountain - Fairy
+Overworld Redux,Chest: GoldenTrophy_3 x 1,"(-62.0, 40.1, -40.5)", ,Overworld - Windmill Secret - Golden Trophy
+Overworld Redux,key twist (1),"(-31.5, 40.3, -39.2)",1,Overworld - Key on the Ground - Key
+Overworld Redux,key twist,"(-65.0, 12.3, -138.0)",1,Overworld - Envoy Guarding Key - Key
+Overworld Redux,Wand Pickup,"(-95.0, 73.0, 46.2)",1,Overworld - Golden Obelisk - Magic Staff
+Overworld Redux,Page Pickup (5),"(8.1, 28.0, -112.2)",0,
+Overworld Redux,Page Pickup (4),"(-70.0, 30.5, -70.0)",1,Overworld - Teleporter - Page
+Overworld Redux,Page Pickup (5),"(-83.0, 21.0, -108.0)",1,Overworld - Fountain - Page
+Overworld Redux,Page Pickup (1),"(-36.0, 40.0, -13.0)",1,Overworld - Behind Windmill - Page
+Overworld Redux,Page Pickup,"(54.0, 48.8, -90.0)",1,Overworld - Gazebo - Page
+Overworld Redux,Page Pickup (3),"(-95.0, 40.0, 3.5)",1,Overworld - Dark Tomb Island - Page
+Overworld Redux,Page Pickup,"(69.0, 10.0, -197.4)",1,Overworld - East Platform - Page
+Overworld Redux,Page Pickup,"(-95.0, 72.0, 47.2)",1,Overworld - Golden Obelisk Secret - Page
+Overworld Redux,Page Pickup (1),"(-3.0, 1.5, -152.0)",1,Overworld - Under the Central Bridge - Page
+Overworld Interiors,Chest: $15,"(-24.4, 27.0, -50.2)",1,Inside the Old House - Front of House - Chest
+Overworld Interiors,Chest: Fairy,"(-28.0, 27.1, -50.5)",1,Inside the Old House - Front of House - Tapestry Secret - Fairy
+Overworld Interiors,shield (1),"(-26.5, 28.0, -47.0)",0,
+Overworld Interiors,shield (1),"(7.0, 29.2, -30.0)",1,Inside the Old House - Shield
+Overworld Interiors,Page Pickup,"(7.0, 30.0, 37.0)",1,Inside the Old House - Behind Door - Page
+Sewer,Chest: Piggybank L1 x 1,"(406.0, 3.1, 174.0)",1,Beneath the Well - Behind the Rubble - Chest
+Sewer,Chest: Trinket - Bloodstain Plus x 1,"(321.0, 3.0, 201.0)",1,Beneath the Well - Hidden Room - Chest
+Sewer,Chest: Piggybank L1 x 1,"(286.3, -0.1, 133.1)",1,Beneath the Well - Under the Stairs - Chest
+Sewer,Chest: Ice Bomb x 3,"(296.1, 11.0, 89.3)",1,Beneath the Well - Phrends - Chest
+Sewer,Chest: Trinket Coin x 1,"(294.5, 11.0, 109.5)",1,Beneath the Well - Balcony - Chest
+Sewer,Chest: $15,"(340.9, 1.3, 137.9)",1,Beneath the Well - Mound - Chest
+Sewer,Chest: $20,"(347.4, -1.0, 115.9)",1,Beneath the Well - Isolated Water Chest - Chest
+Sewer,Chest: Berry_HP x 1,"(368.9, -1.0, 21.0)",1,Beneath the Well - Entrance Waterfall - Chest
+Sewer,Chest: Upgrade Offering - DamageResist - Effigy x 1,"(324.0, 11.0, 89.0)",1,Beneath the Well - Top of the Ladder - Chest
+Sewer,Chest: Flask Shard x 1,"(343.5, 11.0, 69.5)",1,Beneath the Well - Top of Ladder Secret - Chest
+Sewer,Chest: Upgrade Offering - PotionEfficiency Swig - Ash x 1,"(359.9, 0.5, 34.0)",1,Beneath the Well - Entrance - Chest
+Sewer,Treasure Chest (1),"(334.8, 11.0, 54.3)",0,
+Sewer,Chest: Trinket Coin x 1,"(374.0, 7.0, 74.0)",1,Beneath the Well - Above the Fox Shrine - Chest
+Sewer,Chest: $30,"(405.6, 2.0, 107.0)",1,Beneath the Well - Behind the Central Waterfall - Chest
+Sewer,Page Pickup,"(325.0, 1.0, 128.0)",0,
+Sewer,Page Pickup (1),"(351.0, 1.0, 97.0)",1,Beneath the Well - Page
+Library Arena,Questagon,"(0.2, -3.3, 0.4)",1,The Librarian - Green Hexagon
+Crypt,Treasure Chest,"(-78.2, 61.0, 62.0)",0,
+Crypt,Chest: $1,"(-25.0, 57.0, 69.0)",0,
+Crypt,Treasure Chest (1),"(-86.6, 11.0, 7.9)",0,
+Town_FiligreeRoom,Page Pickup,"(-80.0, 23.0, -64.0)",1,Overworld - Inside the Silver Door - Page
+Archipelagos Redux,Chest: $20,"(-297.4, 4.0, 164.3)",1,West Gardens - Fisherman's Perch - Chest
+Archipelagos Redux,Chest: $25,"(-197.8, 1.0, 20.0)",1,West Gardens - Magic Dagger Island - Chest
+Archipelagos Redux,Chest: $200,"(-166.0, 20.0, 165.0)",1,West Gardens - Garden Knight Reward - Chest
+Archipelagos Redux,Chest: Trinket - BTSR x 1,"(-156.9, 4.0, 138.7)",1,West Gardens - Hidden Below Hero's Grave - Chest
+Archipelagos Redux,Chest: Piggybank L1 x 1,"(-195.0, 1.0, 107.9)",1,West Gardens - Isolated Walkway - Chest
+Archipelagos Redux,Chest: Trinket Coin x 1,"(-240.3, 8.0, -24.9)",1,West Gardens - Under the Obelisk - Chest
+Archipelagos Redux,Chest: $15,"(-335.5, 4.0, 100.5)",1,West Gardens - Broken Bridge - Chest
+Archipelagos Redux,Chest: Upgrade Offering - Health HP - Flower x 1,"(-356.5, 0.5, 66.5)",1,West Gardens - Shallow Island - Chest
+Archipelagos Redux,Treasure Chest - nighttime tunic knight void fight,"(-236.0, 16.0, 165.0)",0,
+Archipelagos Redux,Chest: Firecracker x 4,"(-261.0, 8.0, 99.8)",1,West Gardens - Across the Way - Chest
+Archipelagos Redux,Chest: Berry_MP x 1,"(-244.0, 4.0, 118.5)",1,West Gardens - Shortcut Central - Chest
+Archipelagos Redux,Chest: Pepper x 2,"(-241.0, 1.0, 0.0)",1,West Gardens - Under the Shrine - Chest
+Archipelagos Redux,Chest: Upgrade Offering - Attack - Tooth x 1,"(-221.8, 20.0, 92.3)",1,West Gardens - Top of the Boss Ladder - Chest
+Archipelagos Redux,Chest: $32,"(-246.5, 1.8, 61.7)",1,West Gardens - Below the Bridge Mound - Chest
+Archipelagos Redux,Treasure Chest - nighttime tunic knight fight,"(-330.6, 4.0, 68.3)",0,
+Archipelagos Redux,Chest: Upgrade Offering - Stamina SP - Feather x 1,"(-193.2, 8.0, 83.9)",1,West Gardens - Behind the Grass - Chest
+Archipelagos Redux,Chest: $50,"(-257.9, 2.0, 6.6)",1,West Gardens - On the Way - Chest
+Archipelagos Redux,Chest: Sword x 1,"(-235.7, 5.0, 152.5)",1,West Gardens - Silver Door Beneath Bridge - Chest
+Archipelagos Redux,Chest: Fairy,"(-236.0, 8.1, 86.3)",1,West Gardens - Garden Tiles - Fairy
+Archipelagos Redux,Chest: Fairy,"(-396.3, 1.4, 42.3)",1,West Gardens - Fairy Tree - Fairy
+Archipelagos Redux,_KEY PICKUP_,"(-301.7, 4.0, 161.5)",0,
+Archipelagos Redux,Page Pickup,"(-297.4, 4.0, 148.8)",1,West Gardens - Terry - Page
+Archipelagos Redux,Page Pickup (1),"(-182.3, 1.0, 26.9)",1,West Gardens - Behind the Magic Dagger - Page
+Atoll Redux,Chest: $25,"(-38.0, 2.3, -106.3)",1,Ruined Atoll - By the Husher's Gate - Chest
+Atoll Redux,Chest: $15,"(-7.3, 2.2, -110.7)",1,Ruined Atoll - Big Crabbo's Walkway - Chest
+Atoll Redux,Chest: $50,"(-7.0, 16.9, -72.3)",1,Ruined Atoll - Brick House Top - Chest
+Atoll Redux,Chest: Trinket - IFrames x 1,"(-77.0, 3.5, 40.5)",1,Ruined Atoll - Boom! At the Flower - Chest
+Atoll Redux,Chest: $100,"(71.8, 13.0, -44.3)",1,Ruined Atoll - Under SE Telescope - Chest
+Atoll Redux,Chest: $25,"(73.5, 6.0, 83.6)",0,
+Atoll Redux,Chest: Flask Shard x 1,"(77.0, 16.0, 2.5)",1,Ruined Atoll - Locked Brick House - Upper Level - Chest
+Atoll Redux,Chest: GoldenTrophy_10 x 1,"(-134.7, 1.4, 2.9)",1,Ruined Atoll - Celeste Secret - Golden Trophy
+Atoll Redux,Chest: Upgrade Offering - Magic MP - Mushroom x 1,"(0.0, 4.0, 33.0)",1,Ruined Atoll - Bird - Chest
+Atoll Redux,Chest: Trinket - Attack Up Defense Down x 1,"(-55.5, 2.0, 17.0)",1,Ruined Atoll - Behind the Envoy - Chest
+Atoll Redux,Chest: $25,"(71.0, 4.0, 18.0)",1,Ruined Atoll - Locked Brick House - Lower Level - Chest
+Atoll Redux,Chest: Ice Bomb x 2,"(5.8, 0.3, 33.1)",1,Ruined Atoll - Shallow Water - Chest
+Atoll Redux,Chest: $15,"(38.0, 16.0, -72.0)",1,Ruined Atoll - Hidden Ladder - Chest
+Atoll Redux,Chest: Trinket - Block Plus x 1,"(51.5, 1.0, 78.0)",1,Ruined Atoll - Overworld Beach - Chest
+Atoll Redux,Chest: $15,"(73.1, 4.0, 56.6)",1,Ruined Atoll - Bottom of Brick Walkway - Chest
+Atoll Redux,Chest: Piggybank L1 x 1,"(-40.3, 1.0, -40.3)",1,Ruined Atoll - Obscured by the Obelisk - Chest
+Atoll Redux,Chest: Upgrade Offering - DamageResist - Effigy x 1,"(73.0, 14.0, 29.5)",1,Ruined Atoll - Top of Brick Walkway - Chest
+Atoll Redux,key pickup,"(78.1, 6.3, 84.2)",1,Ruined Atoll - Key on the Ground - Key
+Forest Belltower,Chest: Flask Container x 1,"(582.0, 14.0, 86.5)",1,Bell Tower Entrance - Guard Captain Reward - Chest
+Forest Belltower,Chest: $1,"(501.5, 38.0, 114.5)",1,Bell Tower Entrance - Behind the Pots - Chest
+Forest Belltower,Chest: $1,"(495.5, 59.0, 110.0)",1,Bell Tower Entrance - Down the Stairs - Chest
+Forest Belltower,Chest: Stick x 1,"(512.6, 14.0, 51.9)",1,Bell Tower Entrance - Next to the Fox Shrine - Chest
+Forest Belltower,door seal half right,"(494.9, 67.0, 162.6)",0,
+Forest Belltower,door seal half right,"(305.0, 52.7, 31.0)",0,
+Forest Belltower,Page Pickup,"(480.8, 40.0, 104.0)",1,Bell Tower Entrance - Altar - Page
+Transit,Chest: (empty),"(-68.0, 8.0, -40.0)",1,The Far Shore - Forever Friend - Golden Trophy
+Transit,Page Pickup,"(-11.0, 8.0, -68.0)",1,The Far Shore - First Manual Page - Page
+archipelagos_house,lanterndagger,"(-190.9, 4.2, 34.6)",1,West Garden - Magic Dagger Cave - Magic Dagger
+ziggurat2020_2,Chest: Bait x 1,"(149.9, 424.3, -42.6)",1,The Rooted Ziggurat - Above the First Horror - Chest
+ziggurat2020_1,Chest: Berry_MP x 2,"(130.0, 106.0, -129.0)",1,The Rooted Ziggurat - Ziggy Bottom - Chest
+ziggurat2020_1,Chest: $30,"(135.0, 138.0, -58.0)",1,The Rooted Ziggurat - Hit the Switch - Chest
+ziggurat2020_3,Chest: Firecracker x 6,"(153.0, 0.0, -61.0)",1,The Rooted Ziggurat - Isolated Chest - Chest
+ziggurat2020_3,Chest: Ice Bomb x 3,"(129.1, 4.1, -27.3)",1,The Rooted Ziggurat - Hell - Chest
+ziggurat2020_3,Chest: Upgrade Offering - DamageResist - Effigy x 1,"(74.0, 4.0, 5.0)",1,The Rooted Ziggurat - Corpse Chest - Chest
+ziggurat2020_3,Chest: Firecracker x 6,"(149.2, 4.0, -53.5)",1,The Rooted Ziggurat - Barber's Chest - Chest
+ziggurat2020_3,Chest: Berry_HP x 3,"(85.6, 4.0, -51.8)",1,The Rooted Ziggurat - Lonely Chest - Chest
+ziggurat2020_3,Chest: $100,"(-7.0, 4.0, -24.0)",1,The Rooted Ziggurat - Miasma Spider Ambush - Chest
+ziggurat2020_3,Chest: Flask Container x 1,"(67.6, 4.0, -38.0)",1,The Rooted Ziggurat - Surrounded by Autobolts - Chest
+ziggurat2020_3,Take Questagon Interaction,"(521.0, -32.9, -146.0)",1,The Rooted Ziggurat - Boss Scavenger - Blue Hexagon
+Fortress East,Chest: (empty),"(77.0, -1.0, 36.0)",1,Eastern Vault - Lower Outside Chest - Chest
+Fortress Reliquary,Chest: $128,"(199.5, 0.0, -45.0)",1,Eastern Vault - Right Side of Grave - Chest
+Fortress Reliquary,Chest: Trinket - Walk Speed Plus x 1,"(199.5, 0.0, -35.0)",1,Eastern Vault - Left Side of Grave - Chest
+Fortress Reliquary,Chest: Berry_MP x 1,"(127.2, 8.0, -27.0)",1,Eastern Vault - Upper Outside Chest - Chest
+Fortress Reliquary,Group,"(196.2, 4.9, -39.7)",0,
+Waterfall,Chest: Fairy,"(-118.0, 28.0, -46.0)",0,
+Waterfall,Chest: Fairy,"(-47.0, 45.1, 10.0)",1,Overworld - Inside the Gathering Place - Fairy
+Waterfall,Chest: GoldenTrophy_7 x 1,"(-47.5, 45.1, -0.5)",1,Overworld - Inside the Gathering Place - Golden Trophy
+Waterfall,Page Pickup,"(-47.4, 46.9, 3.0)",1,Overworld - Inside the Gathering Place - Page
+Overworld Cave,Chest: Fairy,"(-90.4, 515.1, -738.9)",1,Overworld - Caustic Light Cave - Fairy
+Sewer_Boss,Page Pickup,"(57.0, 9.4, -10.0)",1,Beneath the Well - Shrine Below Dark Tomb - Page
+frog cave main,Chest: Berry_MP x 1,"(4.5, 44.0, 2.0)",1,Frog's Domain - Grapple Above the Fox Shrine - Chest
+frog cave main,Chest: Flask Shard x 1,"(26.0, 36.0, 18.5)",1,Frog's Domain - Hidden Bath - Chest
+frog cave main,Chest: Firecracker x 3,"(-20.3, 28.0, -9.0)",1,Frog's Domain - Obscured Doorway Ledge - Chest
+frog cave main,Chest: Berry_HP x 2,"(-114.5, 28.0, 10.5)",1,Frog's Domain - Northwest Chest - Chest
+frog cave main,Chest: Firecracker x 3,"(13.6, -2.0, -77.1)",1,Frog's Domain - Baby Slorm Pool - Chest
+frog cave main,Chest: $32,"(121.8, 29.8, -51.5)",1,Frog's Domain - Grapple the Autobolt - Chest
+frog cave main,Chest: $25,"(69.0, 36.0, -3.0)",1,Frog's Domain - Hidden Behind the Table - Chest
+frog cave main,Chest: $100,"(-75.0, 9.8, -25.0)",1,Frog's Domain - Altar Chest - Chest
+frog cave main,Chest: Upgrade Offering - Health HP - Flower x 1,"(60.5, 36.0, 4.0)",1,Frog's Domain - Chest by the Table - Chest
+frog cave main,Chest: Upgrade Offering - Attack - Tooth x 1,"(-8.5, 8.0, -43.2)",1,Frog's Domain - Golden Door - Chest
+frog cave main,Inventory items_forcewand,"(50.8, 22.3, -11.0)",1,Frog's Domain - Altar - Magic Orb
+East Forest Redux,Chest: Flask Container x 1,"(119.0, 16.0, 47.0)",0,
+East Forest Redux,Chest: $50,"(139.0, -26.0, -92.0)",1,East Forest - Lower Orb Chest - Chest
+East Forest Redux,Chest: Flask Container x 1,"(92.0, 17.0, 70.5)",1,East Forest - Guardhouse Ledge - Chest
+East Forest Redux,Chest: Firebomb x 3,"(85.0, -4.0, -11.0)",0,
+East Forest Redux,Chest: $15,"(154.0, 8.0, 4.0)",1,East Forest - Above the Shrine - Chest
+East Forest Redux,Chest: Trinket Coin x 1,"(88.0, -30.5, -59.0)",1,East Forest - Under Spiders - Chest
+East Forest Redux,Chest: $40,"(173.0, 8.0, -1.0)",1,East Forest - Behind the Shrine - Chest
+East Forest Redux,Chest: $100,"(91.0, 8.0, 67.5)",1,East Forest - Bombable Wall - Chest
+East Forest Redux,Chest: $20,"(85.0, 4.0, 6.5)",1,East Forest - Telescope - Chest
+East Forest Redux,Chest: Firecracker x 6,"(91.0, -26.0, -58.0)",1,East Forest - Ambushed by Spiders - Chest
+East Forest Redux,Chest: Firecracker x 3,"(61.1, 4.0, 6.9)",0,
+East Forest Redux,Chest: GoldenTrophy_6 x 1,"(104.0, -16.0, -23.8)",1,East Forest - Freeze the Blob - Chest
+East Forest Redux,Chest: Upgrade Offering - Health HP - Flower x 1,"(138.0, -26.0, -107.0)",1,East Forest - Past Lower Orb - Chest
+East Forest Redux,Chest: Berry_HP x 1,"(109.7, 0.0, 10.1)",1,East Forest - Lower Forest Entrance - Chest
+East Forest Redux,Chest: Fairy,"(164.0, -24.9, -56.0)",1,East Forest - Secret of the Golden Obelisk - Fairy
+East Forest Redux,Chest: Fairy,"(104.0, 16.1, 61.0)",1,East Forest - Do the Forest Dance! - Fairy
+East Forest Redux,shield (1),"(135.3, 8.0, 2.5)",0,
+East Forest Redux,_Sword Pickup (1),"(92.1, 18.7, 69.3)",0,
+East Forest Redux,Page Pickup,"(124.0, 1.4, -16.2)",1,East Forest - Teleporter - Page
+East Forest Redux Interior,Chest: Firebomb x 2,"(162.2, 0.1, -8.5)",1,East Forest - Guardhouse 2 Top Floor - Chest
+East Forest Redux Interior,Chest: Ice Bomb x 2,"(193.9, -32.0, -23.8)",1,East Forest - Guardhouse 2 Lower Floor - Chest
+East Forest Redux Laddercave,Treasure Chest,"(166.5, 16.0, 62.5)",1,East Forest - Guardhouse 1 Top Floor - Behind the Pots - Chest
+East Forest Redux Laddercave,Chest: Flask Shard x 1,"(147.0, 16.0, 77.0)",1,East Forest - Guardhouse 1 Top Floor - Beside the Boss Door - Chest
+Furnace,Chest: Upgrade Offering - DamageResist - Effigy x 1,"(-142.0, 12.0, -40.0)",1,Overworld - West Furnace - Chest
+Furnace,LANTERN PICKUP,"(-135.2, 34.1, -43.2)",1,Overworld - West Furnace - Lantern
+Windmill,shield (1),"(-26.5, 28.0, -47.0)",0,
+Swamp Redux 2,Chest: Trinket Coin x 1,"(83.7, 0.0, -73.8)",1,Old Burying Ground - Beside the Grave - Chest
+Swamp Redux 2,Chest: $50,"(-47.7, -1.5, -33.3)",1,Old Burying Ground - At the Bottom of the Tower - Chest
+Swamp Redux 2,Chest: $100,"(75.0, 14.0, 172.6)",1,Old Burying Ground - Close to the Secret Wall - Chest
+Swamp Redux 2,Chest: $25,"(102.1, 6.0, 112.8)",1,Old Burying Ground - Behind and to the Right of the Hero's Grave - Chest
+Swamp Redux 2,Chest: $128,"(39.2, -0.1, -85.3)",1,Old Burying Ground - Out in the Open - Chest
+Swamp Redux 2,Chest: Piggybank L1 x 1,"(47.0, -1.0, 42.0)",1,Old Burying Ground - Obscured Chest - Chest
+Swamp Redux 2,Chest: Berry_HP x 2,"(160.5, 12.0, 22.0)",1,Old Burying Ground - End of Graveyard - Chest
+Swamp Redux 2,Chest: $100,"(-96.0, 11.0, 48.0)",1,Old Burying Ground - After the Cathedral - Chest
+Swamp Redux 2,Chest: $25,"(147.0, 5.8, -33.0)",1,Old Burying Ground - Under Telescope - Chest
+Swamp Redux 2,Chest: Flask Shard x 1,"(145.0, 4.0, 23.3)",1,Old Burying Ground - Hidden Ramps - Chest
+Swamp Redux 2,Chest: $25,"(85.0, 0.0, 85.0)",1,Old Burying Ground - Under the Hero's Grave - Chest
+Swamp Redux 2,Chest: Trinket - Fast Icedagger x 1,"(14.5, 0.0, -73.5)",1,Old Burying Ground - Corner by the Wall - Chest
+Swamp Redux 2,Chest: Trinket Coin x 1,"(160.5, 4.0, -63.0)",1,Old Burying Ground - Hug the Corner Wall - Chest
+Swamp Redux 2,Chest: Trinket Coin x 1,"(36.0, 8.0, -62.0)",1,Old Burying Ground - Pillar Dash Chest - Chest
+Swamp Redux 2,Chest: Firecracker x 4,"(102.0, 6.0, -40.0)",1,Old Burying Ground - Bottom of Ladder Secret - Chest
+Swamp Redux 2,Chest: $256,"(38.0, 12.8, -29.8)",1,Old Burying Ground - Top of the Hill - Chest
+Swamp Redux 2,Chest: Trinket Coin x 1,"(153.0, 16.0, -55.0)",1,Old Burying Ground - The Telescope Chest - Chest
+Swamp Redux 2,Chest: $25,"(184.8, 15.0, 51.0)",1,Old Burying Ground - Between Two Hills - Chest
+Swamp Redux 2,Chest: $50,"(100.0, 4.0, -70.0)",1,Old Burying Ground - Above the Grave - Chest
+Swamp Redux 2,Chest: Berry_MP x 3,"(-41.6, -0.6, 55.4)",1,Old Burying Ground - Shallow Island - Chest
+Swamp Redux 2,Chest: $25,"(166.0, 0.0, -82.0)",1,Old Burying Ground - Isolated Island - Chest
+Swamp Redux 2,Chest: GoldenTrophy_5 x 1,"(59.8, 0.0, -70.6)",1,Old Burying Ground - Red Skull Golfing - Golden Trophy
+Quarry Redux,Chest: Berry_MP x 3,"(52.0, 0.0, 2.5)",1,The Quarry - Behind the Bombable Wall - Chest
+Quarry Redux,Chest: Trinket - Parry Window x 1,"(81.0, 56.0, 25.0)",1,The Quarry - Top of the Two Ladders - Chest
+Quarry Redux,Chest: Berry_HP x 2,"(80.0, 16.0, 13.0)",1,The Quarry - Obscured Walkway - Chest
+Quarry Redux,Chest: Berry_MP x 3,"(-23.0, 0.0, 7.0)",1,The Quarry - Behind the Boxes - Chest
+Quarry Redux,Chest: $10,"(-55.0, 22.0, 48.0)",1,The Quarry - Peaceful Chest - Chest
+Quarry Redux,Chest: Bait x 2,"(-49.5, -12.0, 21.0)",1,The Quarry - Grass Bomb Chest - Chest
+Quarry Redux,Chest: $20,"(-100.0, -69.0, -153.0)",1,The Quarry - Under Snipers - Chest
+Quarry Redux,Chest: $20,"(-131.0, -77.0, -103.0)",1,The Quarry - Deep in the Miasma Pits - Chest
+Quarry Redux,Chest: $20,"(-7.4, -80.3, -77.3)",1,The Quarry - On the way to the Ziggurat - Chest
+Quarry Redux,Chest: Berry_MP x 3,"(-140.0, -48.0, -6.0)",1,The Quarry - Under Shooting Range - Chest
+Quarry Redux,Chest: Ivy x 3,"(62.0, 8.0, 15.0)",1,The Quarry - Tiny Spiral Staircase - Chest
+Quarry Redux,Chest: $20,"(-71.0, -20.0, 40.0)",1,The Quarry - Cube Scaffolding Bridge - Chest
+Quarry Redux,Chest: Flask Shard x 1,"(-56.0, 0.0, 43.0)",1,The Quarry - By the Waterfall - Chest
+Quarry Redux,Chest: $20,"(-80.0, -56.0, -57.0)",1,The Quarry - Under Lower Bridge - Chest
+Quarry Redux,Chest: Upgrade Offering - DamageResist - Effigy x 1,"(-88.0, -43.5, -66.5)",1,The Quarry - On Top of the Lower Bridge - Chest
+Quarry Redux,Chest: Piggybank L1 x 1,"(1.0, -47.6, -78.0)",1,The Quarry - Scaffolding Boxes - Chest
+Quarry Redux,Chest: Shotgun x 1,"(-149.7, -39.7, 8.0)",1,The Quarry - Shooting Range - Chest
+Quarry Redux,Chest: Firecracker x 6,"(-78.9, -40.0, 38.8)",1,The Quarry - Shooting Range Boxes - Chest
+Quarry Redux,Chest: Bait x 1,"(-13.0, 8.0, 21.6)",1,The Quarry - Bottom of Large Spiral Stairs - Chest
+Quarry Redux,Chest: $20,"(1.0, 40.0, -19.0)",1,The Quarry - End of the Ruined Bridge - Chest
+Quarry Redux,Chest: Upgrade Offering - Magic MP - Mushroom x 1,"(20.9, 63.0, 66.7)",1,The Quarry - Dash Above Fox Shrine - Chest
+Quarry Redux,Chest: $20,"(38.7, 24.5, 28.6)",1,The Quarry - In the Miasma Mound - Chest
+Quarry Redux,Chest: Upgrade Offering - Attack - Tooth x 1,"(28.5, 0.0, -3.0)",1,The Quarry - Beyond the Bridge - Chest
+Quarry Redux,Chest: $20,"(125.4, 16.0, 14.8)",1,The Quarry - By the Dark Telescope - Chest
+Quarry Redux,Chest: $20,"(3.4, -8.0, -21.0)",1,The Quarry - Under the Ruined Obelisk - Chest
+Quarry Redux,Chest: Firecracker x 3,"(-9.0, -12.0, -64.7)",1,The Quarry - Backtrack but Below - Chest
+Quarry Redux,Chest: Trinket Coin x 1,"(21.8, 63.0, 51.4)",1,The Quarry - Above the Fox Shrine - Chest
+Quarry Redux,Chest: Fairy,"(0.7, 68.1, 84.7)",1,The Quarry - Snowy Trees - Fairy
+Cathedral Arena,Chest: Hyperdash x 1,"(0.0, 0.0, 0.0)",1,Boss Gauntlet - Hyperdash
+RelicVoid,Relic PIckup (5) (MP),"(-18.7, 2.0, 10.8)",1,Hero's Grave - MP
+RelicVoid,Relic PIckup (2) (Crown),"(18.5, 2.0, -11.0)",1,Hero's Grave - DEF
+RelicVoid,Relic PIckup (6) Sword),"(-18.5, 2.0, -11.0)",1,Hero's Grave - ATK
+RelicVoid,Relic PIckup (3) (HP),"(18.5, 2.0, 10.5)",1,Hero's Grave - HP
+RelicVoid,Relic PIckup (4) (water),"(0.0, 2.0, 21.5)",1,Hero's Grave - Potion
+RelicVoid,Relic PIckup (1) (SP),"(0.0, 2.0, -21.5)",1,Hero's Grave - SP
+Crypt Redux,Chest: $1,"(-63.0, 17.0, 54.0)",1,Dark Tomb - Guarded by Lazers - Chest
+Crypt Redux,Chest: $1,"(-120.0, 25.0, 45.0)",1,Dark Tomb - Balcony - Chest
+Crypt Redux,Chest: Firebomb x 2,"(-119.0, 17.0, 90.0)",1,Dark Tomb - Behind the Stairs
+Crypt Redux,Chest: Trinket Coin x 1,"(-23.0, 17.0, 65.0)",1,Dark Tomb - Hidden Lazer Path - Chest
+Crypt Redux,Chest: $20,"(-119.0, 17.0, 51.0)",1,Dark Tomb - Spikes Corner - Chest
+Crypt Redux,Chest: $1,"(-60.0, 17.0, 13.0)",1,Dark Tomb - Guarded by Many Lazers - Chest
+Crypt Redux,Chest: Trinket - RTSR x 1,"(-79.0, 61.0, 76.0)",1,Dark Tomb - Top of Tomb - Chest
+ShopSpecial,Page Pickup,"(11.9, 0.2, -16.2)",1,Overworld - Shopkeeper - Page
+CubeRoom,Chest: Fairy,"(321.1, 3.1, 217.0)",1,Overworld - Rotation Cube Secret - Fairy
+PatrolCave,Chest: $30,"(86.0, 46.0, -51.0)",1,Overworld - Rudeline Dance Floor - Chest
+PatrolCave,Chest: Fairy,"(74.0, 46.1, 24.0)",1,Overworld - Rudeline Dance Floor - Fairy
+Maze Room,Chest: $255,"(1.0, 0.0, 16.0)",1,Overworld - Invisible Maze Cave - Chest
+Maze Room,Chest: Fairy,"(1.0, 0.1, -1.0)",1,Overworld - Invisible Maze Cave - Fairy
+Cathedral Redux,Chest: Trinket Coin x 1,"(63.8, 20.0, -71.9)",1,The Cathedral - Birdcage Room - Pray to Wallman - Chest
+Cathedral Redux,Chest: Firecracker x 2,"(-26.3, 20.0, -63.6)",1,The Cathedral - Top of the Library - Chest
+Cathedral Redux,Chest: GoldenTrophy_2 x 1,"(-53.5, -20.0, 30.0)",1,The Cathedral - Library Double Secret - Golden Trophy
+Cathedral Redux,Chest: Flask Shard x 1,"(55.8, 20.0, -63.3)",1,The Cathedral - Birdcage Room - Miasma Hushers - Chest
+Cathedral Redux,Chest: Pepper x 2,"(44.5, -0.1, -27.5)",1,The Cathedral - Spike Floor Room - Chest
+Cathedral Redux,Chest: $50,"(89.1, 0.0, -71.7)",1,The Cathedral - Ruin Copies Room - Chest
+Cathedral Redux,Chest: Berry_MP x 2,"(31.5, 20.5, -49.8)",1,The Cathedral - Balcony - Chest
+Cathedral Redux,Chest: Trinket Coin x 1,"(-17.5, 0.0, -47.5)",1,The Cathedral - Library Secret - Chest
+Cathedral Redux,Chest: $20,"(-21.6, 0.0, -71.4)",1,The Cathedral - Library - Chest
+Cathedral Redux,Chest: $1,"(-20.5, 20.0, 30.9)",1,The Cathedral - Lazer Hallway - Chest
+Changing Room,Chest: Trinket Coin x 1,"(33.0, 8.0, 27.0)",1,Overworld - Character Customization Room - Chest
+EastFiligreeCache,Chest: Trinket - Glass Cannon x 1,"(7.0, 0.0, -5.0)",1,Overworld - East Silver Door - Chest #2
+EastFiligreeCache,Chest: Berry_MP x 3,"(2.0, 0.0, -5.0)",1,Overworld - East Silver Door - Chest #1
+EastFiligreeCache,Chest: $50,"(12.0, 0.0, -4.0)",1,Overworld - East Silver Door - Chest #3
+Dusty,Chest: GoldenTrophy_11 x 1,"(57.5, 26.1, 43.8)",1,Eastern Vault - Clean Up the Leaves - Golden Trophy
+Posterity,Sword Pickup,"(130.5, 8.3, 69.3)",0,
+Posterity,Page Pickup,"(172.0, -4.0, 32.0)",0,
