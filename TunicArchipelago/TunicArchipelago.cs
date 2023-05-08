@@ -31,6 +31,9 @@ namespace TunicArchipelago
             harmony.Patch(
                 AccessTools.Method(typeof(SceneLoader), "OnSceneLoaded"),
                 new HarmonyMethod(AccessTools.Method(typeof(SceneLoaderPatches), "SceneLoader_OnSceneLoaded_Patch")));
+            harmony.Patch(AccessTools.Method(typeof(PauseMenu), "__button_ReturnToTitle"),
+                null,
+                new HarmonyMethod(AccessTools.Method(typeof(SceneLoaderPatches), "PauseMenu___button_ReturnToTitle_PostfixPatch")));
 
             harmony.Patch(
                 AccessTools.Method(typeof(PlayerCharacter), "Start"),
@@ -64,6 +67,17 @@ namespace TunicArchipelago
                 AccessTools.PropertyGetter(typeof(Chest), "moneySprayQuantityFromDatabase"),
                 new HarmonyMethod(AccessTools.Method(typeof(ChestPatches), "Chest_moneySprayQuantityFromDatabase_GetterPatch")));
 
+            harmony.Patch(AccessTools.Method(typeof(ItemPickup), "onGetIt"),
+                new HarmonyMethod(AccessTools.Method(typeof(ItemPickupPatches), "ItemPickup_onGetIt_PrefixPatch")));
+            harmony.Patch(AccessTools.Method(typeof(ItemPickup), "alreadyPickedUp"),
+                new HarmonyMethod(AccessTools.Method(typeof(ItemPickupPatches), "ItemPickup_alreadyPickedUp_PrefixPatch")));
+
+            harmony.Patch(AccessTools.Method(typeof(PagePickup), "onGetIt"),
+                new HarmonyMethod(AccessTools.Method(typeof(PagePickupPatches), "PagePickup_onGetIt_PrefixPatch")));
+            harmony.Patch(AccessTools.Method(typeof(PagePickup), "alreadyPickedUp"),
+                new HarmonyMethod(AccessTools.Method(typeof(PagePickupPatches), "PagePickup_alreadyPickedUp_PrefixPatch")));
+
+            // TODO: Replace Hero Relic pickups
             // TODO: Replace well pickups
         }
     }

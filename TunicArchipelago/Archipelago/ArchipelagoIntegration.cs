@@ -22,13 +22,17 @@ namespace TunicArchipelago
         private CancellationTokenSource cancellationTokenSource;
         private IEnumerator<bool> processIncomingItemsStateMachine;
         private IEnumerator<bool> processOutgoingItemsStateMachine;
-        private int lastProcessedItemIndex;
+        private int lastProcessedItemIndex = -1;
         private ConcurrentQueue<(NetworkItem NetworkItem, int ItemIndex)> incomingItems;
         private ConcurrentQueue<NetworkItem> outgoingItems;
 
         public void Connect()
         {
-            this.Disconnect();
+            if (this.connected)
+            {
+                Logger.LogInfo("Already connected to Archipelago");
+                return;
+            }
 
             this.session = ArchipelagoSessionFactory.CreateSession("localhost", 38281);
             this.connected = false;
@@ -64,17 +68,32 @@ namespace TunicArchipelago
             }
             else
             {
-                Logger.LogError("Failed to connect to Arhipelago");
+                Logger.LogError("Failed to connect to Archipelago");
             }
         }
 
         public void Disconnect()
         {
+            Logger.LogInfo("Disconnecting from Archipelago");
+
             if (this.cancellationTokenSource != null)
             {
                 this.cancellationTokenSource.Cancel();
-                this.connected = false;
             }
+
+            if (this.session != null)
+            {
+                this.session.Socket.DisconnectAsync();
+                this.session = null;
+            }
+
+            this.connected = false;
+            this.cancellationTokenSource = null;
+            this.processIncomingItemsStateMachine = null;
+            this.processOutgoingItemsStateMachine = null;
+            this.lastProcessedItemIndex = -1;
+            this.incomingItems = new ConcurrentQueue<(NetworkItem NetworkItem, int ItemIndex)>();
+            this.outgoingItems = new ConcurrentQueue<NetworkItem>();
         }
 
         public void Update()
@@ -84,8 +103,15 @@ namespace TunicArchipelago
                 return;
             }
 
-            this.processIncomingItemsStateMachine.MoveNext();
-            this.processOutgoingItemsStateMachine.MoveNext();
+            if (this.processIncomingItemsStateMachine != null)
+            {
+                this.processIncomingItemsStateMachine.MoveNext();
+            }
+
+            if (this.processOutgoingItemsStateMachine != null)
+            {
+                this.processOutgoingItemsStateMachine.MoveNext();
+            }
         }
 
         private IEnumerator<bool> ProcessIncomingItemsStateMachine()
@@ -238,6 +264,8 @@ namespace TunicArchipelago
             var uniqueName = locationHandler.GetUniqueName(sceneName, gameObject);
             if (uniqueName != null)
             {
+                Logger.LogInfo("Activating check " + uniqueName);
+
                 var locationId =
                     this.session.Locations.GetLocationIdFromName(
                         this.session.ConnectionInfo.Game,
@@ -260,6 +288,8 @@ namespace TunicArchipelago
                 Logger.LogWarning(
                     "Failed to get unique name for check " + gameObject.name +
                     " at " + gameObject.transform.position);
+
+                ShowNotification("INTERACTED WITH UNKNOWN CHEST", "Please file a bug!");
             }
         }
 

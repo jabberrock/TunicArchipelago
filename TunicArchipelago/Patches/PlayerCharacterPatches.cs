@@ -17,7 +17,6 @@ namespace TunicArchipelago
 
         public static void PlayerCharacter_OnDestroy_PostfixPatch(PlayerCharacter __instance)
         {
-            ArchipelagoBehavior.instance.Disconnect();
         }
     }
 }

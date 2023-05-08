@@ -92,6 +92,8 @@
     <Compile Include="Archipelago\ArchipelagoItemHandler.cs" />
     <Compile Include="CsvReader.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="Patches\ItemPickupPatches.cs" />
+    <Compile Include="Patches\PagePickupPatches.cs" />
     <Compile Include="Patches\PlayerCharacterPatches.cs" />
     <Compile Include="PluginInfo.cs" />
     <Compile Include="Patches\SceneLoaderPatches.cs" />

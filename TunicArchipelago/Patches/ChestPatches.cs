@@ -1,4 +1,6 @@
-﻿namespace TunicArchipelago
+﻿using UnityEngine;
+
+namespace TunicArchipelago
 {
     internal class ChestPatches
     {
@@ -26,8 +28,10 @@
                     return false;
 
                 default:
-                    __result = false;
-                    return true;
+                    // Assume that non-interactable chests are open (which
+                    // doesn't matter if they are hidden)
+                    __result = true;
+                    return false;
             }
         }
 
@@ -59,6 +63,16 @@
             __result = 0;
 
             return false;
+        }
+
+        public static void ResetAllChests()
+        {
+            foreach (var chestBehavior in Resources.FindObjectsOfTypeAll<Chest>())
+            {
+                // TODO: Prevent fairies from spawning
+                // TODO: Remove special material for golden trophy chests
+                // TODO: Reset sound effects
+            }
         }
     }
 }
