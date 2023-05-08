@@ -1,8 +1,12 @@
 ﻿using Archipelago.MultiClient.Net;
 using Archipelago.MultiClient.Net.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,6 +20,9 @@ namespace TunicArchipelago
 
         private readonly ArchipelagoItemHandler itemHandler = new ArchipelagoItemHandler();
         private readonly ArchipelagoLocationHandler locationHandler = new ArchipelagoLocationHandler();
+
+        private string hostname = "localhost";
+        private int port = 38281;
 
         private ArchipelagoSession session;
         private bool connected;
@@ -34,7 +41,31 @@ namespace TunicArchipelago
                 return;
             }
 
-            this.session = ArchipelagoSessionFactory.CreateSession("localhost", 38281);
+            var settingsPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "settings.json");
+            if (File.Exists(settingsPath))
+            {
+                using (var fileStream = File.OpenText(settingsPath))
+                using (var jsonReader = new JsonTextReader(fileStream))
+                {
+                    var settings = (JObject)JToken.ReadFrom(jsonReader);
+
+                    if (settings.TryGetValue("hostname", out var hostnameField))
+                    {
+                        var hostname = hostnameField.Value<string>();
+                        if (!string.IsNullOrEmpty(hostname))
+                        {
+                            this.hostname = hostname;
+                        }
+                    }
+
+                    if (settings.TryGetValue("port", out var portField))
+                    {
+                        this.port = portField.Value<int>();
+                    }
+                }
+            }
+
+            this.session = ArchipelagoSessionFactory.CreateSession(this.hostname, this.port);
             this.connected = false;
             this.cancellationTokenSource = new CancellationTokenSource();
             this.processIncomingItemsStateMachine = this.ProcessIncomingItemsStateMachine();
@@ -43,7 +74,7 @@ namespace TunicArchipelago
             this.incomingItems = new ConcurrentQueue<(NetworkItem NetworkItem, int Index)>();
             this.outgoingItems = new ConcurrentQueue<NetworkItem>();
 
-            Logger.LogInfo("Connecting to Archipelago");
+            Logger.LogInfo("Connecting to Archipelago at " + this.hostname + ":" + this.port);
 
             this.session.Items.ItemReceived += (receivedItemsHelper) =>
             {
@@ -132,7 +163,7 @@ namespace TunicArchipelago
                 var itemName = session.Items.GetItemName(networkItem.Item);
                 var itemDisplayName = itemName + " (" + networkItem.Item + ") at index " + pendingItem.ItemIndex;
 
-                if (pendingItem.ItemIndex < this.lastProcessedItemIndex)
+                if (pendingItem.ItemIndex <= this.lastProcessedItemIndex)
                 {
                     Logger.LogWarning("Skipping item " + itemDisplayName + " because it has already been processed");
                     incomingItems.TryDequeue(out _);
