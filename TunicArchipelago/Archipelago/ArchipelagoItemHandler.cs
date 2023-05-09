@@ -1,5 +1,6 @@
 ﻿using Archipelago.MultiClient.Net.Models;
 using NReco.Csv;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -78,7 +79,7 @@ namespace TunicArchipelago
         {
             public HandleResult Handle(ItemTemplate itemTemplate, NetworkItem networkItem)
             {
-                var amount = new System.Random().Next(itemTemplate.MinAmount.Value, itemTemplate.MaxAmount.Value);
+                var amount = new Random().Next(itemTemplate.MinAmount.Value, itemTemplate.MaxAmount.Value);
 
                 Logger.LogInfo("Adding " + itemTemplate.Parameter1 + " x " + amount + " to inventory");
 
@@ -128,7 +129,13 @@ namespace TunicArchipelago
                     }
                 }
 
-                var collectFairyIndex = new System.Random().Next(uncollectedFairies.Count);
+                if (uncollectedFairies.Count == 0)
+                {
+                    Logger.LogWarning("Collected a random fairy but there are no uncollected fairies left");
+                    return HandleResult.PermanentFailure;
+                }
+
+                var collectFairyIndex = new Random().Next(uncollectedFairies.Count);
 
                 Logger.LogInfo("Collected fairy " + collectFairyIndex);
 
@@ -164,7 +171,13 @@ namespace TunicArchipelago
                     }
                 }
 
-                var collectPageIndex = new System.Random().Next(uncollectedPages.Count);
+                if (uncollectedPages.Count == 0)
+                {
+                    Logger.LogWarning("Collected a random manual page but there are no uncollected pages left");
+                    return HandleResult.PermanentFailure;
+                }
+
+                var collectPageIndex = new Random().Next(uncollectedPages.Count);
                 var collectPage = uncollectedPages[collectPageIndex];
 
                 Logger.LogInfo("Collected page " + (collectPage * 2) + "/" + (collectPage * 2 + 1));
@@ -192,7 +205,13 @@ namespace TunicArchipelago
                     }
                 }
 
-                var collectTrophyIndex = new System.Random().Next(uncollectedTrophies.Count);
+                if (uncollectedTrophies.Count == 0)
+                {
+                    Logger.LogWarning("Collected a random golden trophy but there are no uncollected golden trophies left");
+                    return HandleResult.PermanentFailure;
+                }
+
+                var collectTrophyIndex = new Random().Next(uncollectedTrophies.Count);
                 var collectTrophy = uncollectedTrophies[collectTrophyIndex];
 
                 Logger.LogInfo("Collected Golden Trophy " + collectTrophy);
@@ -207,7 +226,7 @@ namespace TunicArchipelago
         {
             public HandleResult Handle(ItemTemplate itemTemplate, NetworkItem networkItem)
             {
-                var amount = new System.Random().Next(itemTemplate.MinAmount.Value, itemTemplate.MaxAmount.Value);
+                var amount = new Random().Next(itemTemplate.MinAmount.Value, itemTemplate.MaxAmount.Value);
 
                 Logger.LogInfo("Spawning " + amount + " money");
                 CoinSpawner.SpawnCoins(amount, PlayerCharacter.Transform.position);

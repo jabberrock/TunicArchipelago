@@ -60,6 +60,9 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="NReco.Csv, Version=0.0.0.0, Culture=neutral, PublicKeyToken=ef4fd95322a66714, processorArchitecture=MSIL">
+      <HintPath>..\packages\NReco.Csv.1.0.1\lib\net45\NReco.Csv.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows" />
@@ -86,6 +89,10 @@
       <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\TUNIC\BepInEx\unhollowed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\TUNIC\BepInEx\unhollowed\UnityEngine.DirectorModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
       <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\TUNIC\BepInEx\unhollowed\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
@@ -99,10 +106,11 @@
     <Compile Include="Archipelago\ArchipelagoBehavior.cs" />
     <Compile Include="Archipelago\ArchipelagoIntegration.cs" />
     <Compile Include="Archipelago\ArchipelagoLocationHandler.cs" />
+    <Compile Include="Patches\CheckDetectorPatches.cs" />
     <Compile Include="Patches\ChestPatches.cs" />
     <Compile Include="Archipelago\ArchipelagoItemHandler.cs" />
-    <Compile Include="CsvReader.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="Patches\HeroRelicPickupPatches.cs" />
     <Compile Include="Patches\ItemPickupPatches.cs" />
     <Compile Include="Patches\PagePickupPatches.cs" />
     <Compile Include="Patches\PlayerCharacterPatches.cs" />

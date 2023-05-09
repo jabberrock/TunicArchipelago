@@ -1,4 +1,5 @@
 ﻿{
+  "player": "<INSERT NAME HERE>",
   "hostname": "localhost",
   "port": 38281
 }

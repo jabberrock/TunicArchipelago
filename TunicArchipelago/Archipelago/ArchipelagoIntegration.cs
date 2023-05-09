@@ -15,12 +15,14 @@ namespace TunicArchipelago
 {
     internal class ArchipelagoIntegration
     {
+        private const string TunicGame = "Tunic";
         private const string SaveFileLastProcessedItemIndexKey = "ARCHIPELAGO - Last Processed Item Index";
         private const string SaveFileCheckActivatedKeyPrefix = "ARCHIPELAGO - Check Activated ";
 
         private readonly ArchipelagoItemHandler itemHandler = new ArchipelagoItemHandler();
         private readonly ArchipelagoLocationHandler locationHandler = new ArchipelagoLocationHandler();
 
+        private string player = "<INSERT NAME HERE>";
         private string hostname = "localhost";
         private int port = 38281;
 
@@ -48,6 +50,15 @@ namespace TunicArchipelago
                 using (var jsonReader = new JsonTextReader(fileStream))
                 {
                     var settings = (JObject)JToken.ReadFrom(jsonReader);
+
+                    if (settings.TryGetValue("player", out var playerField))
+                    {
+                        var player = playerField.Value<string>();
+                        if (!string.IsNullOrEmpty(hostname))
+                        {
+                            this.player = player;
+                        }
+                    }
 
                     if (settings.TryGetValue("hostname", out var hostnameField))
                     {
@@ -89,8 +100,8 @@ namespace TunicArchipelago
             };
 
             var loginResult = this.session.TryConnectAndLogin(
-                "Tunic",
-                "PlayerTunc",
+                TunicGame,
+                this.player,
                 Archipelago.MultiClient.Net.Enums.ItemsHandlingFlags.AllItems);
             if (loginResult.Successful)
             {
@@ -100,6 +111,8 @@ namespace TunicArchipelago
             else
             {
                 Logger.LogError("Failed to connect to Archipelago");
+
+                // TODO: Show GenericMessage that we failed to connect
             }
         }
 

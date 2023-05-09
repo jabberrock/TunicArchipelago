@@ -18,6 +18,7 @@ namespace TunicArchipelago
             Application.runInBackground = true;
 
             SetupArchipelago();
+            //SetupCheckDetector();
 
             Logger.LogInfo("Plugin loaded");
         }
@@ -31,6 +32,7 @@ namespace TunicArchipelago
             harmony.Patch(
                 AccessTools.Method(typeof(SceneLoader), "OnSceneLoaded"),
                 new HarmonyMethod(AccessTools.Method(typeof(SceneLoaderPatches), "SceneLoader_OnSceneLoaded_Patch")));
+
             harmony.Patch(AccessTools.Method(typeof(PauseMenu), "__button_ReturnToTitle"),
                 null,
                 new HarmonyMethod(AccessTools.Method(typeof(SceneLoaderPatches), "PauseMenu___button_ReturnToTitle_PostfixPatch")));
@@ -77,8 +79,31 @@ namespace TunicArchipelago
             harmony.Patch(AccessTools.Method(typeof(PagePickup), "alreadyPickedUp"),
                 new HarmonyMethod(AccessTools.Method(typeof(PagePickupPatches), "PagePickup_alreadyPickedUp_PrefixPatch")));
 
+            harmony.Patch(AccessTools.Method(typeof(HeroRelicPickup), "onGetIt"),
+                new HarmonyMethod(AccessTools.Method(typeof(HeroRelicPickupPatches), "HeroRelicPickup_onGetIt_PrefixPatch")));
+            harmony.Patch(AccessTools.Method(typeof(HeroRelicPickup), "alreadyPickedUp"),
+                new HarmonyMethod(AccessTools.Method(typeof(HeroRelicPickupPatches), "HeroRelicPickup_alreadyPickedUp_PrefixPatch")));
+
             // TODO: Replace Hero Relic pickups
             // TODO: Replace well pickups
+        }
+
+        private void SetupCheckDetector()
+        {
+            var harmony = new Harmony(PluginInfo.Guid);
+
+            harmony.Patch(
+                AccessTools.Method(typeof(Chest), "IInteractionReceiver_Interact"),
+                new HarmonyMethod(AccessTools.Method(typeof(CheckDetectorPatches), "Chest_IInteractionReceiver_InteractPatch")));
+
+            harmony.Patch(AccessTools.Method(typeof(ItemPickup), "onGetIt"),
+                new HarmonyMethod(AccessTools.Method(typeof(CheckDetectorPatches), "ItemPickup_onGetIt_Patch")));
+
+            harmony.Patch(AccessTools.Method(typeof(PagePickup), "onGetIt"),
+                new HarmonyMethod(AccessTools.Method(typeof(CheckDetectorPatches), "PagePickup_onGetIt_Patch")));
+
+            harmony.Patch(AccessTools.Method(typeof(HeroRelicPickup), "onGetIt"),
+                new HarmonyMethod(AccessTools.Method(typeof(CheckDetectorPatches), "HeroRelicPickup_onGetIt_Patch")));
         }
     }
 }

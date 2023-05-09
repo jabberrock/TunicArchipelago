@@ -8,12 +8,11 @@ namespace TunicArchipelago
 {
     internal class ArchipelagoLocationHandler
     {
-        private Dictionary<string, string> gameObjectIdToUniqueName;
+        private Dictionary<string, string> snpToUniqueName = new Dictionary<string, string>();
+        private Dictionary<string, string> snToUniqueName = new Dictionary<string, string>();
 
         public ArchipelagoLocationHandler()
         {
-            var gameObjectIdToUniqueName = new Dictionary<string, string>();
-
             using (var inputStream =
                 Assembly.GetExecutingAssembly()
                     .GetManifestResourceStream("TunicArchipelago.data.locations.csv"))
@@ -25,39 +24,51 @@ namespace TunicArchipelago
                 while (csvReader.Read())
                 {
                     var sceneName = csvReader[0];
-                    var gameObjectName = csvReader[1];
-                    var position = csvReader[2];
-                    var isValidCheck = csvReader[3] == "1";
-                    var uniqueName = csvReader[4];
+                    var name = csvReader[2];
+                    var position = csvReader[3];
+                    var isPositionAccurate = csvReader[4] == "1";
+                    var uniqueName = csvReader[6];
 
-                    if (!isValidCheck)
+                    if (isPositionAccurate)
                     {
-                        continue;
+                        this.snpToUniqueName[sceneName + "|" + name + "|" + position] = uniqueName;
                     }
-
-                    var gameObjectId = GetGameObjectId(sceneName, gameObjectName, position);
-                    gameObjectIdToUniqueName[gameObjectId] = uniqueName;
+                    else
+                    {
+                        this.snToUniqueName[sceneName + "|" + name] = uniqueName;
+                    }
                 }
             }
 
-            this.gameObjectIdToUniqueName = gameObjectIdToUniqueName;
+            foreach (var k in this.snpToUniqueName)
+            {
+                Logger.LogInfo("Location " + k.Key + " -> " + k.Value);
+            }
+
+            foreach (var k in this.snToUniqueName)
+            {
+                Logger.LogInfo("Location " + k.Key + " -> " + k.Value);
+            }
         }
 
         public string GetUniqueName(string sceneName, GameObject gameObject)
         {
-            var gameObjectId = GetGameObjectId(sceneName, gameObject.name, gameObject.transform.position.ToString());
+            var name = gameObject.name;
+            var position = gameObject.transform.position;
 
-            if (!this.gameObjectIdToUniqueName.TryGetValue(gameObjectId, out var uniqueName))
+            string uniqueName;
+            if (this.snpToUniqueName.TryGetValue(sceneName + "|" + name + "|" + position, out uniqueName))
+            {
+                return uniqueName;
+            }
+            else if (this.snToUniqueName.TryGetValue(sceneName + "|" + name, out uniqueName))
+            {
+                return uniqueName;
+            }
+            else
             {
                 return null;
             }
-            
-            return uniqueName;
-        }
-
-        private static string GetGameObjectId(string sceneName, string gameObjectName, string position)
-        {
-            return "[" + sceneName + "] " + gameObjectName + " " + position;
         }
     }
 }
